@@ -1,10 +1,10 @@
 //--------------------------------------------------------------------
 // Modules
-module "bastion_host" {
-  source  = "app.terraform.io/hashicorp-raymond-test/bastion-host/google"
-  version = "2.8.0"
+module "network" {
+  source  = "app.terraform.io/hashicorp-raymond-test/network/google"
+  version = "2.5.0"
 
-  network = 1234
-  project = "tfc4b-test"
-  subnet = "testtest"
+  network_name = "test"
+  project_id = "tfc4b-test"
+  subnets = "asad"
 }
