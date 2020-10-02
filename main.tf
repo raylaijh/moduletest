@@ -13,8 +13,10 @@ module "network" {
             subnet_region         = "us-west1"
         }
 ]
+
+}
   variable "secret" {
       default = []
 }
 
-}
+
