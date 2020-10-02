@@ -2,7 +2,7 @@
 // Modules
 module "network" {
   source  = "app.terraform.io/hashicorp-raymond-test/network/google"
-  version = "2.5.0"
+  version = "2.5.0"  
 
   network_name = "test"
   project_id = "tfc4b-test"
@@ -13,4 +13,8 @@ module "network" {
             subnet_region         = "us-west1"
         }
 ]
+  variable "secret" {
+      default = []
+}
+
 }
