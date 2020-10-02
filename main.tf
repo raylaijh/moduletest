@@ -6,6 +6,10 @@ module "network" {
 
   network_name = "test"
   project_id = "tfc4b-test"
-  subnets = [{"a"="b},{"c"="d"}]
+  subnets = [
+            {"a"="b"}
+            {"c"="d"}
+            ]
+
 
 }
